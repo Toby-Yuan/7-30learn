@@ -10,14 +10,21 @@
             $("#btnTry").click(function () {
                 // .text是雙重效果，有內容時會改資料，沒有時會抓資料
                 $("#report1").text("line1<br>line2");
-                var s = $("#report2").text();
-                alert(s);
+                var s2 = $("#report2").text();
+                alert(s2);
 
                 // .text是寫入文字，.html是寫入程式，append會保留原本資料再寫入程式
                 $("#report3").html("line1<br>line2");
                 $("#report4").append("line1<br>line2");
 
-                
+                // attr盡量不要用，是存取靜態的
+                var s5 = $("#aTextField").attr("value");
+                $("#report5").append(s5);
+
+                // attr和prop互補，prop不行時再用
+                // 兩種都是雙重效果，可以用JS寫入資料: .prop("value","123")
+                var s6 = $("#aTextField").prop("value");
+                $("#report6").append(s6);
             });
         });
     </script>
@@ -27,6 +34,8 @@
     <div id="report2">Report2:</div>
     <div id="report3">Report3:</div>
     <div id="report4">Report4:</div>
+    <div id="report5">Report5:</div>
+    <div id="report6">Report6:</div>
 
     <hr>
 
