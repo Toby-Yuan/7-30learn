@@ -31,6 +31,9 @@
                 // var s7 = $("input[name='radioGroup']").eq(2).attr("checked", "checked");
                 var s7 = $("input[name='radioGroup']").eq(2).prop("checked", "checked");
                 $("#report7").append("radio C selected.");
+
+                // prepend是寫在前面
+                $("#report8").prepend("line1<br>line2");
             });
         });
     </script>
@@ -43,6 +46,7 @@
     <div id="report5">Report5:</div>
     <div id="report6">Report6:</div>
     <div id="report7">Report7:</div>
+    <div id="report8">Report8:</div>
 
     <hr>
 
