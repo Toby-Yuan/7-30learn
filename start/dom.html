@@ -27,7 +27,9 @@
                 $("#report6").append(s6);
 
                 // 意思 : 用attr來改變html的標籤屬性
-                var s7 = $("input[name='radioGroup']").eq(2).attr("checked", "checked");
+                // 但是選擇a會沒反應 -->用prop解決
+                // var s7 = $("input[name='radioGroup']").eq(2).attr("checked", "checked");
+                var s7 = $("input[name='radioGroup']").eq(2).prop("checked", "checked");
                 $("#report7").append("radio C selected.");
             });
         });
