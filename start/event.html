@@ -7,13 +7,19 @@
     <script src="./jquery.js"></script>
 
     <script>
-        function console(obj){
+        function report(obj){
             $("#report").append(obj + "<br>")
         }
 
+        // console.log()可以測試是否正常
         $(document).ready(function () {
             $("#btnTry").click(function () {
-                console("btnTry clicked");
+                report("btnTry clicked");
+            });
+
+            // 點擊#report區域可以清空
+            $("#report").on("click",function () {
+                $("#report").html("Report:<br>");
             });
 
         });
