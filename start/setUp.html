@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jquery 學習1</title>
     <script src="./jquery.js"></script>
-    <script></script>
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+                $(this).hide("slow").show("fast");
+            });
+        });    
+    </script>
 </head>
 <body>
-    
+    <div>Hello!jQuery</div>
 </body>
 </html>
