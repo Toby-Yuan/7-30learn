@@ -11,6 +11,20 @@
 
                 // jquery可以改變css --> .css("stylename","value")
                 $("#report1").css("font-size","2em");
+
+                var x = $("#report2").css("font-size");
+                $("#report2").text(x);
+
+                // 接續寫可以同時設定
+                $("#report3")
+                    .css("font-size", "2em")
+                    .css("font-style", "italic");
+
+                // 用陣列可以更有效同時設定
+                $("#report4").css({
+                    "font-size" : "2em",
+                    "font-style" : "italic"
+                });
             });
         });
     </script>
@@ -24,6 +38,9 @@
     </div>
 
     <div id="report1">Report1:</div>
+    <div id="report2">Report2:</div>
+    <div id="report3">Report3:</div>
+    <div id="report4">Report4:</div>
     <hr>
     <form action="" method="put" onsubmit="return false">
         <button id="btnTry" type="button">Try</button>
