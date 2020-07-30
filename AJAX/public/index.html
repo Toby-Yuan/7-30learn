@@ -151,14 +151,29 @@
                     lastName: $("#lastNameTextBox").val()
                 }
 
+                // post 用法
                 // $.post("/test", dataToServer, function (dataFromServer) {
                 //     $("#resultSpan").text(dataFromServer)
                 // })
 
+
+                // ajax 用法
+                // $.ajax({
+                //     type : "post" , // post get put delete
+                //     url : "/test",
+                //     data : dataToServer
+                // }).then(function (dataFromServer) {
+                //     $("#resultSpan").text(dataFromServer);
+                // })
+
+
+                // JSON 用法
+                // 要加 contentType: "application/json"，跟伺服器說明傳遞方法
                 $.ajax({
                     type : "post" , // post get put delete
                     url : "/test",
-                    data : dataToServer
+                    data : JSON.stringify(dataToServer),
+                    contentType: "application/json", // {fn:"111" ,ln:"222" } --> fn=111 & ln=222
                 }).then(function (dataFromServer) {
                     $("#resultSpan").text(dataFromServer);
                 })
