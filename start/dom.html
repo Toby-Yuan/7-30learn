@@ -12,13 +12,21 @@
                 $("#report1").text("line1<br>line2");
                 var s = $("#report2").text();
                 alert(s);
+
+                // .text是寫入文字，.html是寫入程式，append會保留原本資料再寫入程式
+                $("#report3").html("line1<br>line2");
+                $("#report4").append("line1<br>line2");
+
+                
             });
         });
     </script>
 </head>
 <body>
-    <div id="report1">Report:</div>
-    <div id="report2">Report:</div>
+    <div id="report1">Report1:</div>
+    <div id="report2">Report2:</div>
+    <div id="report3">Report3:</div>
+    <div id="report4">Report4:</div>
 
     <hr>
 
