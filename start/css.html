@@ -8,10 +8,13 @@
     <script>
         $(document).ready(function (){
             $("#btnTry").click(function (){
-                
+
+                // jquery可以改變css --> .css("stylename","value")
+                $("#report1").css("font-size","2em");
             });
         });
     </script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="beta-ribbon-wrapper">
@@ -20,7 +23,7 @@
         </div>
     </div>
 
-    <div id="report">Report:</div>
+    <div id="report1">Report1:</div>
     <hr>
     <form action="" method="put" onsubmit="return false">
         <button id="btnTry" type="button">Try</button>
