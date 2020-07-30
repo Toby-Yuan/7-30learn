@@ -12,7 +12,10 @@
         }
 
         // console.log()可以測試是否正常
+        // $(document).ready : 等網頁載入完成
         $(document).ready(function () {
+
+            // $("#btnTry").on("click", function(){ }); 這樣打也可以
             $("#btnTry").click(function () {
                 report("btnTry clicked");
             });
@@ -20,6 +23,21 @@
             // 點擊#report區域可以清空
             $("#report").on("click",function () {
                 $("#report").html("Report:<br>");
+            });
+
+            // 變化#panda的圖案
+            // event可以針對一個地方設定很多種
+            $("#panda").on({
+                // mouseover : 游標移上
+                "mouseover" : function () {
+                    $("#panda").attr("src" , "./img/panda2.jpg");
+                    report("mouse enter image");
+                },
+                // mouseout : 游標移開
+                "mouseout" : function () {
+                    $("#panda").attr("src" , "./img/panda1.jpg");
+                    report("mouse leave image");
+                }
             });
 
         });
