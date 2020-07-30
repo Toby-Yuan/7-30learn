@@ -1,2 +1,13 @@
 # 7-30learn
 7/30上課內容
+
+# jquery
+- /start
+- 基礎 : setUp...
+- DOM : dom...
+- 改變樣式 : css...
+- 事件處理 : event...
+
+# AJAX
+- 學習 : /AJAX/public/index.html
+- 待加強!!!
