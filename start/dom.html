@@ -8,13 +8,17 @@
     <script>
         $(document).ready(function () {
             $("#btnTry").click(function () {
-                
+                // .text是雙重效果，有內容時會改資料，沒有時會抓資料
+                $("#report1").text("line1<br>line2");
+                var s = $("#report2").text();
+                alert(s);
             });
         });
     </script>
 </head>
 <body>
     <div id="report1">Report:</div>
+    <div id="report2">Report:</div>
 
     <hr>
 
