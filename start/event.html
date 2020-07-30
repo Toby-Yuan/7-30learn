@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 學習4</title>
+    <script src="./jquery.js"></script>
+
+    <script>
+        function console(obj){
+            $("#report").append(obj + "<br>")
+        }
+
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+<body>
+    <img src="./img/panda1.jpg" alt="" id="panda">
+
+    <div id="report">Report:<br></div>
+    <hr>
+    <form action="" method="put" onsubmit="return false">
+        <button type="button" id="btnTry">Try</button>
+        <button type="button" id="btnOff">Off</button>
+    </form>
+</body>
+</html>
