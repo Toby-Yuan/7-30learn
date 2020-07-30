@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 學習2</title>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnTry").click(function () {
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="report1">Report:</div>
+
+    <hr>
+
+    <form action="" method="put" onsubmit="return false">
+        <div>
+            <ladel>Text:</ladel>
+            <input type="text" id="aTextField" name="someTextField">
+        </div>
+        <div>
+            <label for="">Radio group:</label>
+            <input type="radio" id="radioA" name="radioGroup" value="65">A
+            <input type="radio" id="radioB" name="radioGroup" value="66" checked="checked">B
+            <input type="radio" id="radioC" name="radioGroup" value="67">C
+        </div>
+        <div>
+            <label for="">Checkboxes:</label>
+            <input type="checkbox" id="checkbox1" name="checkboxes" value="1">1
+            <input type="checkbox" id="checkbox2" name="checkboxes" value="2">2
+            <input type="checkbox" id="checkbox3" name="checkboxes" value="3" checked="checked">3
+            <input type="checkbox" id="checkbox4" name="checkboxes" value="4">4
+        </div>
+        <button id="btnTry" type="button">Try</button>
+    </form>
+
+</body>
+</html>
