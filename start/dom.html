@@ -25,6 +25,10 @@
                 // 兩種都是雙重效果，可以用JS寫入資料: .prop("value","123")
                 var s6 = $("#aTextField").prop("value");
                 $("#report6").append(s6);
+
+                // 意思 : 用attr來改變html的標籤屬性
+                var s7 = $("input[name='radioGroup']").eq(2).attr("checked", "checked");
+                $("#report7").append("radio C selected.");
             });
         });
     </script>
@@ -36,6 +40,7 @@
     <div id="report4">Report4:</div>
     <div id="report5">Report5:</div>
     <div id="report6">Report6:</div>
+    <div id="report7">Report7:</div>
 
     <hr>
 
